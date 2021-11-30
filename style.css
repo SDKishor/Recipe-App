@@ -28,6 +28,9 @@ a {
 button {
   font-family: inherit;
 }
+button:active {
+  transform: scale(0.98);
+}
 
 .main_container {
   width: 80%;
@@ -118,6 +121,14 @@ h1 {
   margin: 0px 15px;
 }
 
+.fav_meal_container ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .fav_meal_container ul li img {
   width: 80px;
   height: 80px;
@@ -131,7 +142,21 @@ h1 {
   font-size: 12px;
   margin-top: 7px;
 }
+.clsBtn {
+  font-size: 12px;
+  margin-top: 7px;
+  padding: 0.1px 5px;
+  border: none;
+  font-weight: bold;
+  border-radius: 50%;
+  color: var(--primary-text-color);
+  cursor: pointer;
+}
 
+.clsBtn:hover {
+  color: var(--primary-color);
+  background-color: var(--primary-text-color);
+}
 /* Recipe of the day section */
 
 .Day_meal_container {
@@ -322,6 +347,33 @@ h1 {
   background-color: var(--primary-color);
   border: none;
   transition: 0.1s ease-in-out;
+}
+
+.get_more_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+.get_more_container button {
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.get_more_container button:active {
+  transform: scale(0.98);
+}
+
+.addedToFav {
+  color: #fbc85b !important;
+  background-color: #4e534f;
+  border: "none";
+  cursor: "not-allowed";
 }
 
 @media (max-width: 900px) {

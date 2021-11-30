@@ -13,7 +13,7 @@
             <h1>Recipes</h1>
             <div class="search_container">
                 <input id="searchText" type="text" href="random">
-                <button id="searchBtn">
+                <button id="searchBtn" >
                     <a href="#random"><b>Search</b><span>X</span></a>
                     
                 </button>
@@ -22,30 +22,19 @@
         </header>
         <section class="fav_meal_container">
             <h3>Favorite Meals</h3>
-            <ul>
+            <ul id="fav_meal_ul">
                 <li>
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/qvrwpt1511181864.jpg" alt="">
-                    <span>Venetian Duck</span>
-                    <p>x</p>
+                    <a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/qvrwpt1511181864.jpg" alt="">
+                        <span>Venetian Duck</span>
+                    </a>
+                    <button class="clsBtn">x</button>
                 </li>
-                <li>
-                    <img src="https://www.themealdb.com//images//media//meals//yvpuuy1511797244.jpg" alt="">
-                    <span>French Omelette</span>
-                </li>
-                <li>
-                    <img src="https://www.themealdb.com//images//media//meals//wai9bw1619788844.jpg" alt="">
-                    <span>Nasi lemak</span>
-                </li>
-                <li>
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/md8w601593348504.jpg" alt="">
-                    <span>Bigos (Hunters Stew)</span>
-                </li>
-                <li>
-                    <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/ssxvup1511387476.jpg" alt="">
-                    <span>Peach & Blueberry Grunt</span>
-                </li><li>
-                    <img src="https://media.istockphoto.com/vectors/black-plus-sign-positive-symbol-vector-id688550958?k=20&m=688550958&s=612x612&w=0&h=wvzUqT3u3feYygOXg3GB9pYBbqIsyu_xpvfTX-6HOd0=" alt="">
-                    <span>Add More</span>
+                <li><a href="http://youtube.com" target="_blank" rel="noopener noreferrer">
+                        <img src="https:\/\/www.themealdb.com\/images\/media\/meals\/qvrwpt1511181864.jpg" alt="">
+                        <span>Venetian Duck</span>
+                    </a>
+                    <button class="clsBtn">x</button>
                 </li>
             </ul>
         </section>
@@ -60,8 +49,11 @@
                 
             </ul>
         </section>
+        <section id="more_random_meal_container"></section>
         
-        
+        <section class="get_more_container" >
+            <button id="get_More_btn">Get More</button>
+        </section>
     </div>
 
 
